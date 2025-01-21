@@ -32,6 +32,9 @@ p{ margin-left: 20px;}
 .image-fluid{ max-width: 100%; height: auto;}
 img{ vertical-align: middle;  border-style: none;}
 input[type=date]{ font-size: 15px;}
+input[type=date]:focus {
+    border: none !important;
+}
 input[type=file]{border: none; padding: 0px; }
 input,select,textarea{
     width: 300px;
