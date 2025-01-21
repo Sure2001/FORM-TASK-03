@@ -1,9 +1,9 @@
 document.getElementById("registrationForm").addEventListener("submit", function (r) {
-    r.preventDefault(); // Prevent form submission
+    r.preventDefault(); 
   
     let isValid = true;
   
-  // Username validation: Minimum 2 characters, no more than 2 characters allowed
+  // Username validation:
   const username = document.getElementById('username').value.trim();
   const usernameError = document.getElementById('usernameError');
   if (!username) {
@@ -60,7 +60,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     }
   
     // Skills validation
-    const skills = document.getElementById("skills").value;
+    const skills = document.getElementById('input[name="skills"]:checked');
     if (!skills) {
       isValid = false;
       document.getElementById("skillsError").textContent = "Please select a skill.";
@@ -138,7 +138,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     // If all fields are valid, show a success message
     if (isValid) {
       alert("Form submitted successfully!");
-      this.reset(); // Reset the form
+      this.sumit();
     }
   });
   

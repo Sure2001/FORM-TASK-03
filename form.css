@@ -45,23 +45,19 @@ input,select,textarea{
     font-size: 15px;
     border: none;
 }
-
 select{ background-color: white;font-size: 15px;}
-.radio input{ width: 13px;height: 13px;margin-left: 4px;}
-.radio label{ width: 50px; height: 17px;}
+.radio input{ width: 34px;height: 13px;}
+.radio {display: flex; padding: 10px 10px 10px 0px;height: 50px !important;margin-top: 18px;}
+.radio label{ height: 17px; display: flex; margin: 0px 25px 7px -10px;}
+.radio label #text{width: 10px;}
 textarea{
     height: 100px;
     margin: 10px;
-    margin-top: 20px !important;
     width: 651px !important;
 }
 textarea::placeholder{ font-size: 15px; margin-top: 20px;}
-.check{ margin-top: 33px;}
+.check{ margin-top: 18px;}
 .check input{width: 13px;height: 13px;}
-.back input{
-    
-    transition: none;
-}
 .button{
     width: 100px;
     display: flex;

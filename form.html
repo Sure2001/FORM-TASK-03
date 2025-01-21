@@ -19,33 +19,37 @@
                 </div>
                 
                 <div class="col-md-8">
+                  <form id="registrationForm">
                   <div class="row" style="width: 700px; margin-left:30px">
-         <div class="col-md-6 mt-3"> 
-                <form id="registrationForm">
+         <div class="col-md-6 mt-3">    
                   <!-- Username -->
+                   <div class="name">
                   <label for="username"></label>
                   <input type="text" id="username" name="username" placeholder="Name">
-                  <span class="error" id="usernameError"></span>
+                  <span class="error" id="usernameError"></span></div>
               
                   <!-- Mobile Number -->
+                   <div class="mobile">
                   <label for="mobile"></label>
-                  <input type="text" id="mobile" name="mobile" placeholder="Number">
-                  <span class="error" id="mobileError"></span>
+                  <input type="text" id="mobile" name="mobile" maxlength="10" placeholder="MobileNumber">
+                  <span class="error" id="mobileError"></span></div>
               
-                  <!-- Skills -->
-                  <label for="skills"></label>
-                  <select id="skills" name="skills">
-                    <option value="">Select your skill</option>
-                    <option value="HTML">HTML</option>
-                    <option value="CSS">CSS</option>
-                    <option value="JavaScript">JavaScript</option>
-                  </select>
-                  <span class="error" id="skillsError"></span>
+                  <!-- Country -->
+                  <div class="country">
+                    <label for="country"></label>
+                    <select id="country" name="country">
+                      <option value="">Select your country</option>
+                      <option value="USA">USA</option>
+                      <option value="India">India</option>
+                      <option value="Canada">Canada</option>
+                    </select>
+                    <span class="error" id="countryError"></span></div>
 
                   <!-- Password -->
+                   <div class="pass">
                   <label for="password"></label>
                   <input type="password" id="password" name="password" placeholder="Password">
-                  <span class="error" id="passwordError"></span>
+                  <span class="error" id="passwordError"></span></div>
 
                   <!-- File Upload -->
                   <div class="back">
@@ -57,32 +61,29 @@
     </div>
 <div class="col-md-6 mt-3 ">
     <!-- Email -->
-    <label for="email"></label>
-    <input type="email" id="email" name="email" placeholder="Email">
-    <span class="error" id="emailError"></span>
+                  <div class="email">
+                  <label for="email"></label>
+                  <input type="email" id="email" name="email" placeholder="Email">
+                  <span class="error" id="emailError"></span></div>
 
                   <!-- Date -->
+                   <div class="date">
                   <label for="date"></label>
                   <input type="date" id="date" name="date" min="1980-01-01" max="2025-02-01">
-                  <span class="error" id="dateError"></span>
+                  <span class="error" id="dateError"></span></div>
 
-
-                  <!-- Country -->
-                  <label for="country"></label>
-                  <select id="country" name="country">
-                    <option value="">Select your country</option>
-                    <option value="USA">USA</option>
-                    <option value="India">India</option>
-                    <option value="Canada">Canada</option>
-                  </select>
-                  <span class="error" id="countryError"></span>
+                  <!-- Skills -->
+                  <div class="radio">
+                    <label><input type="radio" id="skills" name="skills" value="html">Html  </label>
+                    <label><input type="radio" id="skills" name="skills" value="css">Css  </label>
+                    <label><input type="radio" id="skills" name="skills" value="javascript">JavaScript</label>
+                    <span class="error" id="skillsError"></span></div>
 
                       <!-- Gender -->
                       <div class="radio">
-                        <label></label>
-                        <input type="radio" id="male" name="gender" value="Male">Male    
-                        <input type="radio" id="female" name="gender" value="Female"> Female     
-                        <input type="radio" id="other" name="gender" value="Other"> Other<br>
+                        <label><input type="radio" id="male" name="gender" value="Male">Male    </label>
+                        <label><input type="radio" id="female" name="gender" value="Female"> Female  </label>   
+                        <label><input type="radio" id="other" name="gender" value="Other"> Other</label>
                         <span class="error" id="genderError"></span></div>
                     
                   <!-- Terms and Conditions -->
@@ -94,9 +95,10 @@
                 </div>
 
                   <!-- Feedback -->
+                   <div class="feed">
                   <label for="feedback"></label>
                   <textarea id="feedback" name="feedback" placeholder="Message"></textarea>
-                  <span class="error" id="feedbackError"></span>
+                  <span class="error" id="feedbackError"></span></div>
               
                   <!-- Buttons -->
                   <div class="button">
@@ -104,12 +106,12 @@
                     <button type="submit">Submit</button></div>
                      </div>
             </form>
+          </div>
                 </div>
               </div>
                 </div>
     </div>
         </div>
-</div>
     <script src="form.js"></script>
 </body>
 </html>
